@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Eval - Improved UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Left Panel with Buttons as Sidebar -->
+    <div class="left-panel sidebar">
+        <button class="menu-btn"><i class="fas fa-user-circle"></i> Profile</button>
+        <button class="menu-btn"><i class="fas fa-chess"></i> Practice</button>
+        <button class="menu-btn"><i class="fas fa-tachometer-alt"></i> Difficulty</button>
+        <button class="menu-btn"><i class="fas fa-cogs"></i> Options</button>
+        <button class="menu-btn"><i class="fas fa-trophy"></i> League</button>
+    </div>
+
+    <div class="container">
+        <h1>Guess the Eval! <i class="fas fa-chess-knight"></i></h1>
+
+        <!-- Chessboard and Evaluation Bar Container -->
+        <div class="chessboard-eval-container">
+            <div id="chessboard" class="chessboard"></div>
+            <div class="eval-bar-container">
+                <div id="eval-bar" class="eval-bar"></div>
+            </div>
+        </div>
+
+        <!-- Evaluation Display -->
+        <div class="eval-display">
+            <span>Evaluation: <span id="eval-value">0.0</span></span>
+        </div>
+
+        <!-- Rating Information -->
+        <div class="rating-info">Current Rating: <span id="rating">1409</span></div>
+
+        <!-- Rating Progress Bar -->
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <!-- GUESS Button -->
+        <button id="guess-btn" class="action-btn">GUESS</button>
+
+        <!-- Next Puzzle Button -->
+        <button id="next-puzzle-btn" class="action-btn">Next Puzzle</button>
+
+        <!-- Feedback Display -->
+        <div id="feedback"></div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
